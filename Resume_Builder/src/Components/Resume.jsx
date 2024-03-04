@@ -1,12 +1,9 @@
+import Proptypes from "prop-types";
 import Education from "./Education";
 import Experience from "./Experience";
 import Projects from "./Projects";
-const Resume = (resumeData) => {
-  const exp_data = resumeData.resumeData.experience;
-  const edu_data = resumeData.resumeData.education;
-  const skill_data = resumeData.resumeData.skills;
-  const project_data = resumeData.resumeData.projects;
-  console.log("x", edu_data);
+import { Suspense, useState } from "react";
+const Resume = ({ exp_data, edu_data, skill_data, project_data }) => {
   return (
     <>
       <div className="p-3 mb-2 bg-primary text-white">
@@ -75,3 +72,9 @@ const Resume = (resumeData) => {
 };
 
 export default Resume;
+// Resume.propTypes = {
+//   exp_data: Proptypes.arrayOf(Proptypes.any).isRequired,
+//   edu_data: Proptypes.arrayOf(Proptypes.any).isRequired,
+//   skill_data: Proptypes.arrayOf(Proptypes.any).isRequired,
+//   project_data: Proptypes.arrayOf(Proptypes.any).isRequired,
+// };
