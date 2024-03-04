@@ -72,9 +72,3 @@ const Resume = ({ exp_data, edu_data, skill_data, project_data }) => {
 };
 
 export default Resume;
-// Resume.propTypes = {
-//   exp_data: Proptypes.arrayOf(Proptypes.any).isRequired,
-//   edu_data: Proptypes.arrayOf(Proptypes.any).isRequired,
-//   skill_data: Proptypes.arrayOf(Proptypes.any).isRequired,
-//   project_data: Proptypes.arrayOf(Proptypes.any).isRequired,
-// };

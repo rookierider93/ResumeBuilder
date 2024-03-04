@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 const Experience = ({ year, company, role }) => {
-  console.log("zz");
   return (
     <>
       <div className="card" style={{ width: "50%" }}>
