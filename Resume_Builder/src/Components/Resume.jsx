@@ -3,11 +3,13 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import { Suspense, useState } from "react";
+import ThemeButton from "./ThemeButton";
 const Resume = ({ exp_data, edu_data, skill_data, project_data }) => {
   return (
     <>
       <div className="p-3 mb-2 bg-primary text-white">
         <h2>Resume</h2>
+        <ThemeButton></ThemeButton>
       </div>
 
       <div className="col">
